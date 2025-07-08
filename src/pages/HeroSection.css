@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+  /* ✅ 1. Show full image, focus on top-right */
+  .hero-image {
+
+    object-position: 80% 15% ; 
+    
+  }
+  .hero-container .hero-content {
+    top: 130px;
+    position: relative;
+  }
+
+  /* ✅ 2. Content adjustments */
+  .hero-container .hero-title {
+    position: relative;
+    text-align: left;
+    font-size: 2.5rem; /* Mobile-friendly */
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-container .hero-subtitle {
+    text-align: left;
+  }
+
+  /* ✅ 3. Show buttons in a row (not stacked) */
+  .hero-container .hero-buttons {
+    display: flex;
+    flex-direction: row !important;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
