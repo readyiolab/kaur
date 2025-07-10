@@ -48,12 +48,12 @@ const Index = () => {
   const testimonials = [
     {
       quote: "Shina held space for me in a way no one else had. I came in confused, overwhelmed, and stuck — and left feeling seen, supported, and empowered.",
-      author: "Jasmine A., Toronto",
-      image: "https://images.unsplash.com/photo-1557862921-37829c790f19?w=600&auto=format&fit=crop&q=60"
+      author: "Jasmine A. Toronto",
+      image: "https://plus.unsplash.com/premium_photo-1683140838505-e71d173c27fc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1c2luZXNzJTIwd29tZW58ZW58MHx8MHx8fDA%3D"
     },
     {
       quote: "This wasn’t just coaching. It was transformation. Shina helped me rebuild trust in myself.",
-      author: "Ryan P., Vancouver",
+      author: "Ryan P. Vancouver",
       image: "https://images.unsplash.com/photo-1548964095-b9a292144866?w=600&auto=format&fit=crop&q=60"
     },
     // Replace with testimonials from the sheet
@@ -263,7 +263,7 @@ const Index = () => {
           </div>
           <div className="text-center mt-12">
             <Button className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-              <Link to="/contact">Have We Worked Together?</Link>
+              <Link to="/contact">Want To Work Together ?</Link>
             </Button>
           </div>
         </div>
