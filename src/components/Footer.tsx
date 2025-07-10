@@ -1,4 +1,5 @@
 
+import { Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -22,7 +23,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-lavender-300 transition-colors"
               >
-                Instagram
+                <Instagram className="h-5 w-5 inline-block" />
               </a>
               <a 
                 href="https://linkedin.com/in/kaurshina4" 
@@ -30,7 +31,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-lavender-300 transition-colors"
               >
-                LinkedIn
+                <Linkedin className="h-5 w-5 inline-block" />
               </a>
             </div>
           </div>

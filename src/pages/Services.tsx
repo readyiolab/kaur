@@ -65,10 +65,10 @@ const Services = () => {
       <section
         className="relative min-h-[60vh] flex items-center bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1519624133901-3420156d01b2?w=600&auto=format&fit=crop&q=60')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNlcnZpY2VzfGVufDB8fDB8fHww')"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#E8DFF5]/50 to-[#E8DFF5]/50 "></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#E8DFF5]/80 to-[#E8DFF5]/80 "></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#5A4B81] mb-6 animate-slide-in drop-shadow-md">
             How We Can <span className="text-[#D9A5B3]">Work Together</span>
@@ -129,7 +129,7 @@ const Services = () => {
                     className="w-full bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 mt-auto"
                     asChild
                   >
-                    <Link to="/booking">{option.buttonText}</Link>
+                    <Link to="/contact">{option.buttonText}</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -143,7 +143,7 @@ const Services = () => {
               asChild
               className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
-              <Link to="/booking">Chat Free for 15 Min</Link>
+              <Link to="/contact">Chat Free for 15 Min</Link>
             </Button>
           </div>
         </div>
@@ -227,7 +227,7 @@ const Services = () => {
                 </ul>
               </div>
               <Button size="lg" className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                Inquire About Workshops
+                <Link to="/contact">Inquire About Workshops</Link>
               </Button>
             </div>
           </div>
@@ -239,7 +239,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-serif font-bold text-[#5A4B81] mb-6 animate-slide-in">
-              You'll Feel at Home Here If...
+              You’re ready to embrace your becoming..
             </h2>
             <p className="text-lg text-[#7D6C61] max-w-2xl mx-auto">
               Our coaching is designed for those ready to embrace their journey of transformation.
@@ -284,7 +284,7 @@ const Services = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-[#F6F1EB] text-[#3F2E56] hover:bg-[#E8DFF5] px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              Book a Free Discovery Call <PhoneCall />
+              <Link to="/contact"  className='flex justify-center items-center gap-4'>Book a Free Discovery Call <PhoneCall /></Link>
             </Button>
             <Button variant="outline" className="border-white bg-transparent text-white hover:bg-[#F6F1EB] hover:text-[#3F2E56] px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               <Link to="/contact">Browse All Offers</Link>

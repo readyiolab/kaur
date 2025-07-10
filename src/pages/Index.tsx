@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import Layout from '@/components/Layout';
 import { MessageCircle, PhoneCall } from 'lucide-react';
+import Layout from '@/components/Layout';
 import './HeroSection.css';
-
 
 const Index = () => {
   const values = [
@@ -24,7 +23,7 @@ const Index = () => {
       icon: '🎙️',
       title: 'Courageous Authenticity',
       description: 'We speak what\'s true, not just what\'s marketable — even when it\'s messy.',
-      image: 'https://images.unsplash.com/photo-1531497868296-0a5a08c67501?w=600&auto=format&fit=crop&q=60' // Replaced cooking image
+      image: 'https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=600&auto=format&fit=crop&q=60' // Updated image
     },
     {
       icon: '🕊️',
@@ -53,37 +52,33 @@ const Index = () => {
       image: "https://images.unsplash.com/photo-1557862921-37829c790f19?w=600&auto=format&fit=crop&q=60"
     },
     {
-      quote: "This wasn't just coaching. It was transformation. Shina helped me rebuild trust in myself.",
+      quote: "This wasn’t just coaching. It was transformation. Shina helped me rebuild trust in myself.",
       author: "Ryan P., Vancouver",
       image: "https://images.unsplash.com/photo-1548964095-b9a292144866?w=600&auto=format&fit=crop&q=60"
-    }
-    // Add more testimonials as provided
+    },
+    // Replace with testimonials from the sheet
   ];
 
   return (
     <Layout>
       <section className="hero-section relative min-h-screen flex items-center overflow-hidden">
         <img src="./11.JPG" alt="Hero" className="hero-image absolute inset-0 w-full h-full object-cover md:object-cover" />
-
         <div className="hero-overlay absolute inset-0 bg-gradient-to-r from-[#3F2E56]/90 via-[#3F2E56]/30 to-transparent"></div>
-
         <div className="hero-container relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="hero-content lg:w-3/5 xl:w-1/2 text-center md:text-left">
             <h1 className="hero-title text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight animate-slide-in drop-shadow-md">
               Helping you Navigate Life Transitions with <span className="text-[#D9A5B3]">Courage, Clarity, and Self-Trust</span>
             </h1>
-
             <h2 className="hero-subtitle text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8 max-w-2xl leading-relaxed animate-slide-in animate-delay-200 drop-shadow-md">
               Support for high-capacity individuals who are redefining themselves.
             </h2>
-
-            <div className="hero-buttons flex flex-col sm:flex-row gap-4 animate-slide-in animate-delay-400 justify-center md:justify-start">
-              <Button className="btn-primary bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#3F2E56]/30">
+            <div className="hero-buttons flex flex-col sm:flex-row gap-4 sm:gap-6 animate-slide-in animate-delay-400 justify-center md:justify-start items-center md:items-start">
+              <Button id="#calendly-booking" className="btn-primary bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#3F2E56]/30 w-full sm:w-auto">
                 Book a Free Discovery Call
               </Button>
-              <Button
+              <Button 
                 variant="outline"
-                className="btn-secondary border-2 border-[#D9A5B3] text-[#D9A5B3] hover:bg-[#D9A5B3] hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D9A5B3]/30"
+                className="btn-secondary border-2 border-[#D9A5B3] text-[#D9A5B3] hover:bg-[#D9A5B3] hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D9A5B3]/30 w-full sm:w-auto"
               >
                 <Link to="/services">Explore Services</Link>
               </Button>
@@ -92,18 +87,15 @@ const Index = () => {
         </div>
       </section>
 
-
-
-      {/* Meet Shina Section */}
       <section className="py-24 bg-[#E8DFF5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-last lg:order-first">
-              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl group">
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl group flex justify-center items-center">
                 <img
                   src="./6.JPG"
                   alt="Shina Kaur"
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#D9A5B3]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
@@ -132,61 +124,63 @@ const Index = () => {
                   Let’s build your next chapter—on your terms.
                 </p>
               </div>
-              <Button className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-                <Link to="/about">Learn More About Me</Link>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
+                  <Link to="/about">Learn More About Me</Link>
+                </Button>
+                
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
       <section className="py-24 bg-[#F6F1EB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-[#5A4B81] mb-6 animate-slide-in">
+            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-[#3F2E56] mb-6 animate-slide-in  px-4 py-2 rounded-lg inline-block">
               How We Can Work Together
             </h2>
-            <p className="text-lg text-[#7D6C61] max-w-2xl mx-auto">
+            <p className="text-lg text-[#3F2E56] max-w-2xl mx-auto px-4 py-2 rounded-lg">
               Discover personalized coaching and resources designed to guide you through life's transitions.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <Card className="bg-[#F6F1EB] border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <Card className="bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-[#D9A5B3]/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl">🟣</span>
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-[#5A4B81] mb-4">
+                <h3 className="text-2xl font-serif font-bold text-[#3F2E56] mb-4">
                   1:1 Transition Coaching
                 </h3>
-                <p className="text-[#7D6C61] leading-relaxed">
+                <p className="text-[#3F2E56] leading-relaxed">
                   Private coaching containers to support your next chapter with personalized strategy, inner clarity, and emotional safety.
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-[#F6F1EB] border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <Card className="bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-[#D9A5B3]/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl">🟣</span>
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-[#5A4B81] mb-4">
+                <h3 className="text-2xl font-serif font-bold text-[#3F2E56] mb-4">
                   Digital Toolkit
                 </h3>
-                <p className="text-[#7D6C61] leading-relaxed">
+                <p className="text-[#3F2E56] leading-relaxed">
                   A downloadable workbook with 20+ prompts to help you process, reset, and reimagine your life in transition.
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-[#F6F1EB] border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <Card className="bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-[#D9A5B3]/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl">🟣</span>
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-[#5A4B81] mb-4">
+                <h3 className="text-2xl font-serif font-bold text-[#3F2E56] mb-4">
                   Live Workshops
                 </h3>
-                <p className="text-[#7D6C61] leading-relaxed">
+                <p className="text-[#3F2E56] leading-relaxed">
                   Custom-designed sessions for organizations, communities, and institutions supporting people through big life changes.
                 </p>
               </CardContent>
@@ -200,7 +194,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Values Section */}
       <section className="py-24 bg-[#E8DFF5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -237,7 +230,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
       <section className="py-24 bg-[#F6F1EB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -277,7 +269,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Media Section */}
       <section className="py-24 bg-[#E8DFF5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#5A4B81] mb-12 animate-slide-in">
@@ -304,7 +295,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
       <section className="py-24 bg-gradient-to-r from-[#3F2E56] to-[#5A4B81] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-serif font-bold mb-6 animate-slide-in">
@@ -317,7 +307,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-[#F6F1EB] text-[#3F2E56] hover:bg-[#E8DFF5] px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-              Book a Free Discovery Call <PhoneCall />
+              <Link to="/contact" className='flex items-center justify-center gap-5'>Book a Free Discovery Call <PhoneCall /></Link>
             </Button>
             <Button variant="outline" className="border-white text-white bg-transparent hover:bg-[#F6F1EB] hover:text-[#3F2E56] px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
               <Link to="/contact" className='flex justify-center items-center gap-5'>Send Me a Message <MessageCircle /></Link>
@@ -325,8 +315,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-     
     </Layout>
   );
 };

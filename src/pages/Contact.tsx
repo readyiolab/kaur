@@ -8,6 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import Layout from '@/components/Layout';
 import { useToast } from '@/hooks/use-toast';
 import { Instagram, Linkedin, PhoneCall } from 'lucide-react';
+import useScrollToHashTargets from "@/customhooks/useScrollToHashTargets";
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,6 +19,8 @@ const Contact = () => {
     message: ''
   });
   const { toast } = useToast();
+
+  useScrollToHashTargets(['calendly-booking'], 500);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,10 +42,10 @@ const Contact = () => {
       <section 
         className="relative min-h-[60vh] flex items-center bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1528747045269-390fe33c19f2?q=80&w=870&auto=format&fit=crop')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1563906267088-b029e7101114?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGNvbnRhY3R8ZW58MHx8MHx8fDA%3D')"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#E8DFF5]/80 to-[#E8DFF5]/50 parallax-bg"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#E8DFF5]/90 to-[#E8DFF5]/90 parallax-bg"></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#5A4B81] mb-6 animate-slide-in drop-shadow-md">
             Let's <span className="text-[#D9A5B3]">Connect</span>
@@ -184,7 +188,7 @@ const Contact = () => {
               </Card>
 
               {/* Calendar Booking */}
-              <Card className="border-0 shadow-lg hover:shadow-2xl transition-all duration-300 bg-[#F6F1EB]">
+              <Card id="calendly-booking" className="border-0 shadow-lg hover:shadow-2xl transition-all duration-300 bg-[#F6F1EB]">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-serif font-bold text-[#5A4B81] mb-6">
                     Book a Free Discovery Call
