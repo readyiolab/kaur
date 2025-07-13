@@ -78,9 +78,16 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="bg-lavender-600 hover:bg-lavender-700 text-white">
-              Book Discovery Call
-            </Button>
+            <a
+  href="https://calendly.com/simran-shinakaur/15"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="bg-lavender-600 hover:bg-lavender-700 text-white">
+    Book Discovery Call
+  </Button>
+</a>
+
           </nav>
 
           {/* Mobile menu button */}
@@ -114,9 +121,16 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-lavender-600 hover:bg-lavender-700 text-white w-full">
-                Book Discovery Call
-              </Button>
+             <a
+  href="https://calendly.com/simran-shinakaur/15"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="bg-lavender-600 hover:bg-lavender-700 text-white">
+    Book Discovery Call
+  </Button>
+</a>
+
             </div>
           </div>
         )}

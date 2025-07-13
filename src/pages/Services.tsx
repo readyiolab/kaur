@@ -1,10 +1,26 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Layout from '@/components/Layout';
-import { PhoneCall } from 'lucide-react';
+import { PhoneCall, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState, useRef } from 'react';
+import VideoSection from './VideoSection';
 
 const Services = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef(null);
+
+  const handlePlayVideo = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   const coachingOptions = [
     {
       title: 'Free Discovery Call',
@@ -59,6 +75,28 @@ const Services = () => {
     }
   ];
 
+  const testimonials = [
+    {
+      name: 'Ulamen Vanessa Edionseri',
+      title: 'Peer Leader - University Canada West',
+      points: [
+        'Being an NSO volunteer to joining the Peer2Peer program for two terms was an incredibly rewarding part of my MBA journey, and Shina’s presence made it all the more special. From the start, I was drawn to the program by a desire to build meaningful connections, offer support, and grow in leadership and through Shina’s guidance, that hope blossomed into something even more beautiful.',
+        'Shina is warm, kind, and genuinely present. Her “get-it-done” attitude is paired with a joyful spirit that makes you feel instantly at ease. She brings such intentionality to the way she supports and uplifts others always ready to listen, offer insight, or lend a helping hand.',
+        'What really stood out to me is how Shina leads with heart. Her energy is compassionate, grounded, and empowering. She creates spaces where people feel seen and heard and that’s a rare and powerful gift.',
+        'If you’re thinking about working with Shina, know this: you’re in the best hands. She’s not only an incredible support but also someone who champions your growth and truly wants to see you thrive. I’m deeply grateful for her support, both during the Peer2Peer experience and beyond.'
+      ]
+    },
+    {
+      name: 'Imaobong Kingsley Archibong',
+      title: 'Co-Chair, UCW Student Advisory Council, Senior Peer Leader – Spring 2025, Program Ambassador, Career Development Centre',
+      points: [
+        'Working with Shina during my time as a Senior Peer Leader at University Canada West was both grounding and empowering. Her leadership was never about titles or hierarchy; it was about presence, clarity, and the ability to hold space for authentic growth.',
+        'What stayed with me most was Shina’s intuitive and heart-led support. She helped me see leadership as something rooted in emotional intelligence and calm consistency, even during uncertain moments. That balance of structure and compassion shaped the way I showed up for my own team.',
+        'If you’re considering working with Shina, know that you’ll be met with empathy, insight, and a deep belief in your capacity to lead from within. She doesn’t just coach, she gently transforms.'
+      ]
+    }
+  ];
+
   return (
     <Layout>
       {/* Hero Section with Parallax */}
@@ -77,7 +115,6 @@ const Services = () => {
             Compassionate support for your most important transitions
           </p>
         </div>
-        
       </section>
 
       {/* 1:1 Coaching Section */}
@@ -106,10 +143,8 @@ const Services = () => {
                 className={`relative bg-[#F6F1EB] border-0 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden ${index === 2 ? 'ring-2 ring-[#D9A5B3]/50' : ''
                   } flex flex-col group`}
               >
-                {/* Subtle gradient overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#D9A5B3]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <CardContent className="p-6 text-center flex flex-col flex-grow z-10">
-                  {/* Highlight badge for recommended option */}
                   {index === 2 && (
                     <div className="absolute top-0 right-0 bg-[#D9A5B3] text-white text-xs font-semibold px-3 py-1 rounded-bl-lg">
                       Recommended
@@ -272,6 +307,79 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Video Section */}
+      {/* <section className="py-24 bg-[#E8DFF5]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-[#5A4B81] mb-6 animate-slide-in">
+              Discover Your Journey
+            </h2>
+            <p className="text-lg text-[#7D6C61] max-w-2xl mx-auto">
+              Watch this video to learn how our coaching can guide you through your transformative journey with clarity and compassion.
+            </p>
+          </div>
+          <div className="relative max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-xl group">
+            <video
+              ref={videoRef}
+              className="w-full h-full object-cover"
+              src="https://res.cloudinary.com/dbyjiqjui/video/upload/v1752409961/Extended_VSL_1_ik1zmn.mp4"
+              poster="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&auto=format&fit=crop&q=60"
+              controls={isPlaying}
+            />
+            {!isPlaying && (
+              <div className="absolute inset-0 flex items-center justify-center bg-[#3F2E56]/50 transition-opacity duration-300 group-hover:bg-[#3F2E56]/40">
+                <button
+                  onClick={handlePlayVideo}
+                  className="bg-[#D9A5B3] text-white rounded-full p-4 sm:p-6 hover:bg-[#5A4B81] transform hover:scale-110 transition-all duration-300 shadow-lg"
+                  aria-label="Play video"
+                >
+                  <Play className="w-8 h-8 sm:w-12 sm:h-12" />
+                </button>
+              </div>
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#D9A5B3]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </div>
+        </div>
+      </section> */}
+      <VideoSection/>
+
+      {/* Testimonials Section */}
+      <section className="py-24 bg-[#E8DFF5]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-[#5A4B81] mb-6 animate-slide-in">
+              What Clients Are Saying
+            </h2>
+            <p className="text-lg text-[#7D6C61] max-w-2xl mx-auto">
+              Hear from those who have experienced Shina’s transformative coaching and workshops.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card
+                key={index}
+                className="bg-[#F6F1EB] border-0 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col"
+              >
+                <CardContent className="p-6 flex flex-col flex-grow">
+                  <ol className="space-y-4 text-[#7D6C61] text-sm leading-relaxed flex-grow">
+                    {testimonial.points.map((point, pointIndex) => (
+                      <li key={pointIndex} className="flex items-start space-x-3">
+                        <span className="text-[#D9A5B3] font-semibold">*</span>
+                        <p>{point}</p>
+                      </li>
+                    ))}
+                  </ol>
+                  <div className="mt-6 border-t border-[#D9A5B3]/20 pt-4">
+                    <p className="text-[#5A4B81] font-semibold text-center">{testimonial.name}</p>
+                    <p className="text-[#7D6C61] text-sm text-center">{testimonial.title}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="py-24 bg-gradient-to-r from-[#3F2E56] to-[#5A4B81] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -284,7 +392,7 @@ const Services = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-[#F6F1EB] text-[#3F2E56] hover:bg-[#E8DFF5] px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-              <Link to="/contact"  className='flex justify-center items-center gap-4'>Book a Free Discovery Call <PhoneCall /></Link>
+              <Link to="/contact" className='flex justify-center items-center gap-4'>Book a Free Discovery Call <PhoneCall /></Link>
             </Button>
             <Button variant="outline" className="border-white bg-transparent text-white hover:bg-[#F6F1EB] hover:text-[#3F2E56] px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               <Link to="/contact">Browse All Offers</Link>
@@ -293,7 +401,6 @@ const Services = () => {
         </div>
       </section>
 
-     
       <div className="p-12 bg-[#E8DFF5] text-center m-10 rounded-lg shadow-lg">
         <p className="text-[#7D6C61] text-lg">
           All journeys start with a 15-min chat. Just possibility. Let’s co-create a coaching plan that meets your goals and your life - because investing in yourself should feel empowering, not stressful.

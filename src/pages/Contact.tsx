@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <Layout>
       {/* Hero Section with Parallax */}
-      <section 
+      <section
         className="relative min-h-[60vh] flex items-center bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{
           backgroundImage: "url('https://images.unsplash.com/photo-1563906267088-b029e7101114?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGNvbnRhY3R8ZW58MHx8MHx8fDA%3D')"
@@ -51,7 +51,7 @@ const Contact = () => {
             Let's <span className="text-[#D9A5B3]">Connect</span>
           </h1>
           <p className="text-lg sm:text-xl text-[#7D6C61] max-w-3xl mx-auto animate-slide-in animate-delay-200 drop-shadow-md">
-            Whether you're ready to start coaching, collaborate on a workshop, or simply say hello — 
+            Whether you're ready to start coaching, collaborate on a workshop, or simply say hello —
             I'd love to hear from you. This space is here to support your next steps, with warmth and clarity.
           </p>
         </div>
@@ -194,7 +194,7 @@ const Contact = () => {
                     Book a Free Discovery Call
                   </h3>
                   <p className="text-[#7D6C61] mb-6">
-                    Ready to explore working together? Schedule a complimentary 15-minute conversation 
+                    Ready to explore working together? Schedule a complimentary 15-minute conversation
                     to share what you're going through and see if we're a good fit.
                   </p>
                   <div className=" rounded-lg  text-center">
@@ -216,18 +216,18 @@ const Contact = () => {
                     Connect on Social
                   </h3>
                   <div className="flex flex-col space-y-4">
-                    <a 
-                      href="https://instagram.com/shina.kaur" 
-                      target="_blank" 
+                    <a
+                      href="https://instagram.com/shina.kaur"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center space-x-2 text-[#D9A5B3] hover:text-[#5A4B81] transition-colors"
                     >
                       <Instagram />
                       <span>@shina.kaur</span>
                     </a>
-                    <a 
-                      href="https://linkedin.com/in/kaurshina4" 
-                      target="_blank" 
+                    <a
+                      href="https://linkedin.com/in/kaurshina4"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center space-x-2 text-[#D9A5B3] hover:text-[#5A4B81] transition-colors"
                     >
@@ -251,9 +251,19 @@ const Contact = () => {
           <p className="text-xl mb-8 opacity-90 leading-relaxed">
             Every transformation begins with a single conversation. Let's make it count.
           </p>
-          <Button className="bg-[#F6F1EB] text-[#3F2E56] hover:bg-[#E8DFF5] px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-            Book a Free Discovery Call <PhoneCall />
-          </Button>
+          <a
+            href="https://calendly.com/simran-shinakaur/15"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              id="calendly-booking"
+              className="btn-primary bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#3F2E56]/30 w-full sm:w-auto"
+            >
+              Book a Free Discovery Call
+            </Button>
+          </a>
+
         </div>
       </section>
     </Layout>

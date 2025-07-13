@@ -25,6 +25,10 @@ const About = () => {
     {
       text: "Guided dozens of clients globally through high-stakes decisions and identity reinvention.",
       image: 'https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?w=600&auto=format&fit=crop&q=80'
+    },
+    {
+      text: "Published and Award Winning Photographer since 2015.",
+      image: 'https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=600&auto=format&fit=crop&q=60'
     }
   ];
 
@@ -125,9 +129,9 @@ const About = () => {
             <div className="relative">
               <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-lg">
                 <img
-                  src="./5.jpg"
+                  src="./5.webp"
                   alt="Shina Kaur"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="object-cover  hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-[#D9A5B3] rounded-full opacity-20"></div>
@@ -268,29 +272,29 @@ const About = () => {
             </div>
           </div>
 
-          {/* Final Message */}
-          <div className="text-center mb-8 space-y-4">
-            <p className=" text-[#7D6C61] leading-relaxed text-xl font-bold">
-              This isn't about fixing you. It's about:
-            </p>
-            <div className="max-w-5xl mx-auto flex flex-row gap-4">
+          {/* You’ll Feel At Home Here If… Section */}
+          <div className="text-center mb-8 space-y-6">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#5A4B81] mb-6">
+              You’ll Feel At Home Here If…
+            </h2>
+            <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row lg:gap-6 gap-4">
               {[
                 "Owning your 'I don't know' phases.",
                 "Celebrating your 'Oh, THAT'S who I am' moments.",
-                "Remembering: You've always had the pieces."
+                "Remembering: You've always had the pieces.",
+                "You’re ready to embrace your becoming."
               ].map((text, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-3 p-4 bg-white rounded-lg shadow-md border border-[#E8DFF5] hover:shadow-lg transition-shadow"
+                  className="flex items-center justify-center p-4 bg-white/40 rounded-lg shadow-md border border-[#E8DFF5] hover:shadow-lg transition-shadow text-center"
                 >
-                  
                   <p className="text-[#7D6C61] leading-relaxed text-md">
                     {text}
                   </p>
                 </div>
               ))}
             </div>
-            <p className="text-lg font-medium text-[#5A4B81] italic">
+            <p className="text-lg font-medium text-[#5A4B81] italic mt-6">
               Let's arrange them into something unexpectedly brilliant.
             </p>
           </div>
@@ -357,7 +361,11 @@ const About = () => {
               >
                 TriCity News
               </a>
+
             </div>
+            <button className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 mt-5 rounded-lg font-semibold text-base transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1">
+              <Link to="#">Published and Award Winning Photographer since 2015</Link>
+            </button>
           </div>
         </div>
       </section>
@@ -371,9 +379,19 @@ const About = () => {
           <p className="text-base sm:text-lg mb-6 opacity-90 leading-relaxed">
             Let's explore what's calling you forward in a free discovery conversation.
           </p>
-          <Button className="bg-[#F6F1EB] text-[#3F2E56] hover:bg-[#E8DFF5] px-6 py-3 text-base rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-            <Link to="/contact" className='flex justify-center items-center gap-4'>Book a Free Discovery Call <PhoneCall className="ml-2 h-5 w-5" /></Link>
-          </Button>
+          <a
+            href="https://calendly.com/simran-shinakaur/15"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              id="calendly-booking"
+              className="btn-primary bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#3F2E56]/30 w-full sm:w-auto"
+            >
+              Book a Free Discovery Call
+            </Button>
+          </a>
+
         </div>
       </section>
     </Layout>

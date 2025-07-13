@@ -73,10 +73,20 @@ const Index = () => {
               Support for high-capacity individuals who are redefining themselves.
             </h2>
             <div className="hero-buttons flex flex-col sm:flex-row gap-4 sm:gap-6 animate-slide-in animate-delay-400 justify-center md:justify-start items-center md:items-start">
-              <Button id="#calendly-booking" className="btn-primary bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#3F2E56]/30 w-full sm:w-auto">
-                Book a Free Discovery Call
-              </Button>
-              <Button 
+              <a
+                href="https://calendly.com/simran-shinakaur/15"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  id="calendly-booking"
+                  className="btn-primary bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#3F2E56]/30 w-full sm:w-auto"
+                >
+                  Book a Free Discovery Call
+                </Button>
+              </a>
+
+              <Button
                 variant="outline"
                 className="btn-secondary border-2 border-[#D9A5B3] text-[#D9A5B3] hover:bg-[#D9A5B3] hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D9A5B3]/30 w-full sm:w-auto"
               >
@@ -128,7 +138,7 @@ const Index = () => {
                 <Button className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
                   <Link to="/about">Learn More About Me</Link>
                 </Button>
-                
+
               </div>
             </div>
           </div>
@@ -306,9 +316,19 @@ const Index = () => {
             and reimagine your life with courage and clarity.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-[#F6F1EB] text-[#3F2E56] hover:bg-[#E8DFF5] px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-              <Link to="/contact" className='flex items-center justify-center gap-5'>Book a Free Discovery Call <PhoneCall /></Link>
-            </Button>
+            <a
+              href="https://calendly.com/simran-shinakaur/15"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                id="calendly-booking"
+                className="btn-primary bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#3F2E56]/30 w-full sm:w-auto"
+              >
+                Book a Free Discovery Call
+              </Button>
+            </a>
+
             <Button variant="outline" className="border-white text-white bg-transparent hover:bg-[#F6F1EB] hover:text-[#3F2E56] px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
               <Link to="/contact" className='flex justify-center items-center gap-5'>Send Me a Message <MessageCircle /></Link>
             </Button>
