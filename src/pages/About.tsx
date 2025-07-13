@@ -302,7 +302,9 @@ const About = () => {
           {/* CTA Button */}
           <div className="text-center">
             <button className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 rounded-lg font-semibold text-base transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1">
-              <Link to="/contact">Work With Me</Link>
+              <a href="https://calendly.com/simran-shinakaur/15" target="_blank" rel="noopener noreferrer">
+                Work With Me
+              </a>
             </button>
           </div>
         </div>
@@ -363,9 +365,7 @@ const About = () => {
               </a>
 
             </div>
-            <button className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 mt-5 rounded-lg font-semibold text-base transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1">
-              <Link to="#">Published and Award Winning Photographer since 2015</Link>
-            </button>
+            
           </div>
         </div>
       </section>

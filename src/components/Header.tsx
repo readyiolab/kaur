@@ -48,9 +48,8 @@ const Header = () => {
 
   return (
     <header
-      className={`bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 ${
-        isScrolled ? 'shadow-md' : ''
-      }`}
+      className={`bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 ${isScrolled ? 'shadow-md' : ''
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
@@ -69,24 +68,23 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-lavender-600 ${
-                  isActive(item.path)
+                className={`text-sm font-medium transition-colors hover:text-lavender-600 ${isActive(item.path)
                     ? 'text-lavender-600 border-b-2 border-lavender-600'
                     : 'text-gray-700'
-                }`}
+                  }`}
               >
                 {item.name}
               </Link>
             ))}
             <a
-  href="https://calendly.com/simran-shinakaur/15"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Button className="bg-lavender-600 hover:bg-lavender-700 text-white">
-    Book Discovery Call
-  </Button>
-</a>
+              href="https://calendly.com/simran-shinakaur/15"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-lavender-600 hover:bg-lavender-700 text-white">
+                Book Discovery Call
+              </Button>
+            </a>
 
           </nav>
 
@@ -113,23 +111,22 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`text-base font-medium transition-colors hover:text-lavender-600 ${
-                    isActive(item.path) ? 'text-lavender-600' : 'text-gray-700'
-                  }`}
+                  className={`text-base font-medium transition-colors hover:text-lavender-600 ${isActive(item.path) ? 'text-lavender-600' : 'text-gray-700'
+                    }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-             <a
-  href="https://calendly.com/simran-shinakaur/15"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Button className="bg-lavender-600 hover:bg-lavender-700 text-white">
-    Book Discovery Call
-  </Button>
-</a>
+              <a
+                href="https://calendly.com/simran-shinakaur/15"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-lavender-600 hover:bg-lavender-700 text-white">
+                  Book Discovery Call
+                </Button>
+              </a>
 
             </div>
           </div>

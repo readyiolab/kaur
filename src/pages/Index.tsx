@@ -80,7 +80,7 @@ const Index = () => {
               >
                 <Button
                   id="calendly-booking"
-                  className="btn-primary bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#3F2E56]/30 w-full sm:w-auto"
+                  className="btn-primary bg-[#3F2E56] hover:bg-[#5A4B81] text-white border-2 border-[#3F2E56] px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#3F2E56]/30 w-full sm:w-auto"
                 >
                   Book a Free Discovery Call
                 </Button>
@@ -90,7 +90,9 @@ const Index = () => {
                 variant="outline"
                 className="btn-secondary border-2 border-[#D9A5B3] text-[#D9A5B3] hover:bg-[#D9A5B3] hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D9A5B3]/30 w-full sm:w-auto"
               >
-                <Link to="/services">Explore Services</Link>
+                <Link to="/services" className="inline-block w-full text-center">
+                  Explore Services
+                </Link>
               </Button>
             </div>
           </div>
@@ -273,7 +275,9 @@ const Index = () => {
           </div>
           <div className="text-center mt-12">
             <Button className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg">
-              <Link to="/contact">Want To Work Together ?</Link>
+              <a href="https://calendly.com/simran-shinakaur/15" target="_blank" rel="noopener noreferrer">
+                Want To Work Together ?
+              </a>
             </Button>
           </div>
         </div>
