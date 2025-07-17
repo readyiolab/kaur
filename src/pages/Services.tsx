@@ -136,40 +136,54 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            {coachingOptions.map((option, index) => (
-              <Card
-                key={index}
-                className={`relative bg-[#F6F1EB] border-0 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden ${index === 2 ? 'ring-2 ring-[#D9A5B3]/50' : ''
-                  } flex flex-col group`}
-              >
-                <div className="absolute inset-0 bg-gradient-to-t from-[#D9A5B3]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <CardContent className="p-6 text-center flex flex-col flex-grow z-10">
-                  {index === 2 && (
-                    <div className="absolute top-0 right-0 bg-[#D9A5B3] text-white text-xs font-semibold px-3 py-1 rounded-bl-lg">
-                      Recommended
-                    </div>
-                  )}
-                  <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#5A4B81] mb-3">
-                    {option.title}
-                  </h3>
-                  <p className="text-sm text-[#7D6C61]/80 mb-4">{option.duration}</p>
-                  <div className="text-3xl font-bold text-[#D9A5B3] mb-4">
-                    {option.price}
-                  </div>
-                  <p className="text-sm text-[#7D6C61] leading-relaxed mb-6 flex-grow">
-                    {option.description}
-                  </p>
-                  <Button
-                    className="w-full bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 mt-auto"
-                    asChild
-                  >
-                    <Link to="/contact">{option.buttonText}</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+  {coachingOptions.map((option, index) => {
+    const isFreeCall = index === 0;
+    const targetLink = isFreeCall
+      ? 'https://calendly.com/simran-shinakaur/15'
+      : 'https://stan.store/ShineWithShina';
+
+    return (
+      <Card
+        key={index}
+        className={`relative bg-[#F6F1EB] border-0 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden ${
+          index === 2 ? 'ring-2 ring-[#D9A5B3]/50' : ''
+        } flex flex-col group`}
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-[#D9A5B3]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <CardContent className="p-6 text-center flex flex-col flex-grow z-10">
+          {index === 2 && (
+            <div className="absolute top-0 right-0 bg-[#D9A5B3] text-white text-xs font-semibold px-3 py-1 rounded-bl-lg">
+              Recommended
+            </div>
+          )}
+          <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#5A4B81] mb-3">
+            {option.title}
+          </h3>
+          <p className="text-sm text-[#7D6C61]/80 mb-4">{option.duration}</p>
+          <div className="text-3xl font-bold text-[#D9A5B3] mb-4">
+            {option.price}
           </div>
+          <p className="text-sm text-[#7D6C61] leading-relaxed mb-6 flex-grow">
+            {option.description}
+          </p>
+
+          <a
+            href={targetLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-auto"
+          >
+            <Button className="w-full bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105">
+              {option.buttonText}
+            </Button>
+          </a>
+        </CardContent>
+      </Card>
+    );
+  })}
+</div>
+
           <div className="text-center mt-12">
             <p className="text-lg text-[#7D6C61] mb-6">
               Not sure where you fit? Start with a free call and we’ll explore what aligned support looks like for you. No pressure, just presence.
@@ -204,9 +218,19 @@ const Services = () => {
                   📥 Delivered instantly upon purchase. Use it again and again — whenever life shifts.
                 </p>
               </div>
-              <Button size="lg" className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                Download Toolkit
-              </Button>
+              <a
+                href="https://stan.store/ShineWithShina"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  className="bg-[#3F2E56] hover:bg-[#5A4B81] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                >
+                  Download Toolkit
+                </Button>
+              </a>
+
             </div>
             <div className="relative">
               <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl group">
@@ -341,7 +365,7 @@ const Services = () => {
           </div>
         </div>
       </section> */}
-      <VideoSection/>
+      <VideoSection />
 
       {/* Testimonials Section */}
       <section className="py-24 bg-[#E8DFF5]">

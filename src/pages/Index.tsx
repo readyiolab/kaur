@@ -77,24 +77,28 @@ const Index = () => {
                 href="https://calendly.com/simran-shinakaur/15"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="w-full sm:w-auto"
               >
                 <Button
                   id="calendly-booking"
-                  className="btn-primary bg-[#3F2E56] hover:bg-[#5A4B81] text-white border-2 border-[#3F2E56] px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#3F2E56]/30 w-full sm:w-auto"
+                  className="btn-primary bg-[#3F2E56] hover:bg-[#5A4B81] text-white border-2 border-[#3F2E56] px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#3F2E56]/30 w-full"
                 >
                   Book a Free Discovery Call
                 </Button>
               </a>
 
-              <Button
-                variant="outline"
-                className="btn-secondary border-2 border-[#D9A5B3] text-[#D9A5B3] hover:bg-[#D9A5B3] hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D9A5B3]/30 w-full sm:w-auto"
-              >
-                <Link to="/services" className="inline-block w-full text-center">
-                  Explore Services
-                </Link>
-              </Button>
+              <div className="w-full sm:w-auto">
+                <Button
+                  variant="outline"
+                  className="btn-secondary border-2 border-[#D9A5B3] text-[#D9A5B3] hover:bg-[#D9A5B3] hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D9A5B3]/30 w-full"
+                >
+                  <Link to="/services" className="w-full text-center">
+                    Explore Services
+                  </Link>
+                </Button>
+              </div>
             </div>
+
           </div>
         </div>
       </section>

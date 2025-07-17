@@ -92,10 +92,10 @@ const About = () => {
                 Meet Shina
               </h2>
               <div className="space-y-4">
-                <p className="text-lg text-[#7D6C61] leading-relaxed">
+                <p className="text-lg text-[#7D6C61] leading-relaxed text-justify">
                   Here's the deal: Life's transitions don't care about your 5-year plan. But here's what does work: grit, grace, and a damn good strategy.
                 </p>
-                <p className="text-base text-[#7D6C61] leading-relaxed">
+                <p className="text-base text-[#7D6C61] leading-relaxed text-justify">
                   I'm not here to "fix" you, you're not a problem to solve. I'm here to help you:
                 </p>
                 <div className="space-y-3">
@@ -103,7 +103,7 @@ const About = () => {
                     <div className="w-5 h-5 bg-[#D9A5B3] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                       <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                     </div>
-                    <p className="text-[#7D6C61] leading-relaxed">
+                    <p className="text-[#7D6C61] leading-relaxed text-justify">
                       Win at being you (even when the rules keep changing).
                     </p>
                   </div>
@@ -111,7 +111,7 @@ const About = () => {
                     <div className="w-5 h-5 bg-[#D9A5B3] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                       <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                     </div>
-                    <p className="text-[#7D6C61] leading-relaxed">
+                    <p className="text-[#7D6C61] leading-relaxed text-justify">
                       Navigate uncertainty like a pro (because you've survived 100% of your worst days).
                     </p>
                   </div>
@@ -119,7 +119,7 @@ const About = () => {
                     <div className="w-5 h-5 bg-[#D9A5B3] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                       <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                     </div>
-                    <p className="text-[#7D6C61] leading-relaxed">
+                    <p className="text-[#7D6C61] leading-relaxed text-justify">
                       Rewrite your definition of success (spoiler: it's allowed to include joy).
                     </p>
                   </div>
@@ -129,9 +129,9 @@ const About = () => {
             <div className="relative">
               <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-lg">
                 <img
-                  src="./5.webp"
+                  src="./shinaa.webp"
                   alt="Shina Kaur"
-                  className="object-cover  hover:scale-105 transition-transform duration-300"
+                  className="object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-[#D9A5B3] rounded-full opacity-20"></div>
@@ -139,135 +139,121 @@ const About = () => {
             </div>
           </div>
 
-          {/* Second Section: The Messy Middle */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-12">
-            <div className="space-y-6">
+          {/* Second Section: The Messy Middle & Why This Work Found Me */}
+          <div className="mb-12">
+            <div className="lg:max-w-3xl lg:mx-auto space-y-6">
               <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#5A4B81]">
                 The Messy Middle (Where All the Good Stuff Happens)
               </h3>
-              <div className="space-y-4">
-                <p className="text-base text-[#7D6C61] leading-relaxed">
+              <div className="space-y-4 ">
+                <p className="text-base text-[#7D6C61] leading-relaxed text-center">
                   I used to think life was a checklist:
                 </p>
                 <div className="space-y-2">
-                  <div className="flex items-start gap-2">
+                  <div className="flex items-center justify-start gap-2">
                     <div className="w-5 h-5 bg-[#D9A5B3] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                       <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                     </div>
-                    <p className="text-[#7D6C61] leading-relaxed">
+                    <p className="text-[#7D6C61] leading-relaxed text-justify">
                       Get the degree (SFU, with 8 leadership roles—because overachiever).
                     </p>
                   </div>
-                  <div className="flex items-start gap-2">
+                  <div className="flex items-center justify-start gap-2">
                     <div className="w-5 h-5 bg-[#D9A5B3] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                       <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                     </div>
-                    <p className="text-[#7D6C61] leading-relaxed">
+                    <p className="text-[#7D6C61] leading-relaxed text-justify">
                       Land the job (even if it made my soul feel like a spreadsheet).
                     </p>
                   </div>
-                  <div className="flex items-start gap-2">
+                  <div className="flex items-center justify-start gap-2">
                     <div className="w-5 h-5 bg-[#D9A5B3] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                       <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                     </div>
-                    <p className="text-[#7D6C61] leading-relaxed">
+                    <p className="text-[#7D6C61] leading-relaxed text-justify">
                       Keep pushing (until burnout hit like a ton of bricks).
                     </p>
                   </div>
                 </div>
-                <p className="text-lg font-medium text-[#5A4B81] italic">
+                <p className="text-lg font-medium text-center text-[#5A4B81] italic ">
                   Then the universe laughed. Hard.
                 </p>
               </div>
-            </div>
-            <div className="space-y-4">
-              <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
-                <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed">
-                  Graduated into a pandemic, jobless for a year, despite my "impressive" resume.
-                </p>
-                <p className="text-[#5A4B81] font-semibold text-sm">
-                  <span className="font-bold">Learned:</span> Achievement doesn't teach you self-worth.
-                </p>
+              {/* Timeline Section */}
+              <div className="space-y-6">
+                <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
+                  <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed text-justify">
+                    Graduated into a pandemic, jobless for a year, despite my "impressive" resume.
+                  </p>
+                  <p className="text-[#5A4B81] font-semibold text-sm text-justify">
+                    <span className="font-bold">Learned:</span> Achievement doesn't teach you self-worth.
+                  </p>
+                </div>
+                <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
+                  <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed text-justify">
+                    Moved across the country alone for a corporate job I thought would fix me. Got let go.
+                  </p>
+                  <p className="text-[#5A4B81] font-semibold text-sm text-justify">
+                    <span className="font-bold">Learned:</span> All jobs are bubbles; they can burst.
+                  </p>
+                </div>
+                <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
+                  <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed text-justify">
+                    First solo drive: Portland to DC: crammed my life into a Jeep Patriot, took a wrong exit in Montana, and got my windshield cracked by a rogue truck rock.
+                  </p>
+                  <p className="text-[#5A4B81] font-semibold text-sm text-justify">
+                    <span className="font-bold">Learned:</span> You're capable of far more than you think.
+                  </p>
+                </div>
+                <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
+                  <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed text-justify">
+                    Built ShineyShoots off my decade of photography experience, then realized: Turning my art into client work drained the joy.
+                  </p>
+                  <p className="text-[#5A4B81] font-semibold text-sm text-justify">
+                    <span className="font-bold">Learned:</span> Boundaries are love.
+                  </p>
+                </div>
+                <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
+                  <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed text-justify">
+                    Took a 3-month sabbatical in Punjab, India; drank endless chai, and listened to my gut whisper "This isn't it."
+                  </p>
+                  <p className="text-[#5A4B81] font-semibold text-sm text-justify">
+                    <span className="font-bold">Learned:</span> My intuition–quiet, steady, and always there–was right all along.
+                  </p>
+                </div>
+                <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
+                  <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed text-justify">
+                    Packed my life into a car (again) and drove solo back to Vancouver - no job, no plan, just faith that I'd find my way.
+                  </p>
+                  <p className="text-[#5A4B81] font-semibold text-sm text-justify">
+                    <span className="font-bold">Learned:</span> Showing up without a map is how you find your true path.
+                  </p>
+                </div>
               </div>
-              <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
-                <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed">
-                  Moved across the country alone for a corporate job I thought would fix me. Got let go.
+              {/* Why This Work Found Me */}
+              <div className="space-y-6 border-t-5 border-[#E8DFF5] pt-6 mt-6">
+                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#5A4B81] text-center">
+                  Why This Work Found Me
+                </h3>
+                <p className="text-base text-[#7D6C61] leading-relaxed text-center">
+                  Because transition is my native language. Now, I help others:
                 </p>
-                <p className="text-[#5A4B81] font-semibold text-sm">
-                  <span className="font-bold">Learned:</span> All jobs are bubbles; they can burst.
-                </p>
-              </div>
-              <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
-                <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed">
-                  First solo drive: Portland to DC: crammed my life into a Jeep Patriot, took a wrong exit in Montana, and got my windshield cracked by a rogue truck rock.
-                </p>
-                <p className="text-[#5A4B81] font-semibold text-sm">
-                  <span className="font-bold">Learned:</span> You're capable of far more than you think.
-                </p>
-              </div>
-            </div>
-          </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {[
+                    'Find clarity in the chaos (without waiting for permission).',
+                    'Summon courage (even when it feels like faking it).',
+                    'Trust themselves (because no one else gets to define your worth).'
+                  ].map((text, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-white/40 p-6 rounded-2xl shadow-md flex gap-3 items-start"
+                    >
 
-          {/* Third Section: More Journey Stories */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-12">
-            <div className="space-y-4">
-              <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
-                <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed">
-                  Built ShineyShoots off my decade of photography experience, then realized: Turning my art into client work drained the joy.
-                </p>
-                <p className="text-[#5A4B81] font-semibold text-sm">
-                  <span className="font-bold">Learned:</span> Boundaries are love.
-                </p>
-              </div>
-              <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
-                <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed">
-                  Took a 3-month sabbatical in Punjab, India; drank endless chai, and listened to my gut whisper "This isn't it."
-                </p>
-                <p className="text-[#5A4B81] font-semibold text-sm">
-                  <span className="font-bold">Learned:</span> My intuition–quiet, steady, and always there–was right all along.
-                </p>
-              </div>
-            </div>
-            <div className="space-y-6">
-              <div className="bg-white/40 backdrop-blur-sm p-4 rounded-lg border border-white/20 shadow-sm">
-                <p className="text-[#7D6C61] mb-2 text-sm leading-relaxed">
-                  Packed my life into a car (again) and drove solo back to Vancouver - no job, no plan, just faith that I'd find my way.
-                </p>
-                <p className="text-[#5A4B81] font-semibold text-sm">
-                  <span className="font-bold">Learned:</span> Showing up without a map is how you find your true path.
-                </p>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#5A4B81] text-center">
-                Why This Work Found Me
-              </h3>
-              <p className="text-base text-[#7D6C61] leading-relaxed">
-                Because transition is my native language. Now, I help others:
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <div className="w-5 h-5 bg-[#5A4B81] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                  </div>
-                  <p className="text-[#7D6C61] leading-relaxed">
-                    Find clarity in the chaos (without waiting for permission).
-                  </p>
+                      <p className="text-[#7D6C61] ">{text}</p>
+                    </div>
+                  ))}
                 </div>
-                <div className="flex items-start gap-2">
-                  <div className="w-5 h-5 bg-[#5A4B81] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                  </div>
-                  <p className="text-[#7D6C61] leading-relaxed">
-                    Summon courage (even when it feels like faking it).
-                  </p>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="w-5 h-5 bg-[#5A4B81] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                  </div>
-                  <p className="text-[#7D6C61] leading-relaxed">
-                    Trust themselves (because no one else gets to define your worth).
-                  </p>
-                </div>
+
               </div>
             </div>
           </div>
@@ -288,13 +274,13 @@ const About = () => {
                   key={index}
                   className="flex items-center justify-center p-4 bg-white/40 rounded-lg shadow-md border border-[#E8DFF5] hover:shadow-lg transition-shadow text-center"
                 >
-                  <p className="text-[#7D6C61] leading-relaxed text-md">
+                  <p className="text-[#7D6C61] leading-relaxed text-md text-justify">
                     {text}
                   </p>
                 </div>
               ))}
             </div>
-            <p className="text-lg font-medium text-[#5A4B81] italic mt-6">
+            <p className="text-lg font-medium text-[#5A4B81] italic text-center">
               Let's arrange them into something unexpectedly brilliant.
             </p>
           </div>
@@ -317,7 +303,7 @@ const About = () => {
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#5A4B81] mb-4 animate-slide-in">
               A Few Highlights Along the Journey
             </h2>
-            <p className="text-base text-[#7D6C61] max-w-2xl mx-auto">
+            <p className="text-base text-[#7D6C61] max-w-2xl mx-auto text-justify">
               Milestones that reflect Shina's impact and dedication.
             </p>
           </div>
@@ -337,7 +323,7 @@ const About = () => {
                     <div className="w-5 h-5 bg-[#D9A5B3]/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <div className="w-1.5 h-1.5 bg-[#D9A5B3] rounded-full"></div>
                     </div>
-                    <p className="text-[#7D6C61] text-sm leading-relaxed">
+                    <p className="text-[#7D6C61] text-sm leading-relaxed text-justify">
                       {highlight.text}
                     </p>
                   </div>
@@ -363,9 +349,7 @@ const About = () => {
               >
                 TriCity News
               </a>
-
             </div>
-            
           </div>
         </div>
       </section>
@@ -376,7 +360,7 @@ const About = () => {
           <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-4 animate-slide-in">
             Ready to Begin Your Journey?
           </h2>
-          <p className="text-base sm:text-lg mb-6 opacity-90 leading-relaxed">
+          <p className="text-base sm:text-lg mb-6 opacity-90 leading-relaxed text-justify">
             Let's explore what's calling you forward in a free discovery conversation.
           </p>
           <a
@@ -391,7 +375,6 @@ const About = () => {
               Book a Free Discovery Call
             </Button>
           </a>
-
         </div>
       </section>
     </Layout>
