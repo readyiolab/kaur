@@ -376,42 +376,7 @@ const Services = () => {
       </section> */}
       <VideoSection />
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-[#E8DFF5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-[#5A4B81] mb-6 animate-slide-in">
-              What Clients Are Saying
-            </h2>
-            <p className="text-lg text-[#7D6C61] max-w-2xl mx-auto">
-              Hear from those who have experienced Shina’s transformative coaching and workshops.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card
-                key={index}
-                className="bg-[#F6F1EB] border-0 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col"
-              >
-                <CardContent className="p-6 flex flex-col flex-grow">
-                  <ol className="space-y-4 text-[#7D6C61] text-sm leading-relaxed flex-grow">
-                    {testimonial.points.map((point, pointIndex) => (
-                      <li key={pointIndex} className="flex items-start space-x-3">
-                        <span className="text-[#D9A5B3] font-semibold">*</span>
-                        <p>{point}</p>
-                      </li>
-                    ))}
-                  </ol>
-                  <div className="mt-6 border-t border-[#D9A5B3]/20 pt-4">
-                    <p className="text-[#5A4B81] font-semibold text-center">{testimonial.name}</p>
-                    <p className="text-[#7D6C61] text-sm text-center">{testimonial.title}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Final CTA Section */}
       <section className="py-24 bg-gradient-to-r from-[#3F2E56] to-[#5A4B81] text-white">

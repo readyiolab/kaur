@@ -45,18 +45,26 @@ const Index = () => {
     }
   ];
 
-  const testimonials = [
+ const testimonials = [
     {
-      quote: "Shina held space for me in a way no one else had. I came in confused, overwhelmed, and stuck — and left feeling seen, supported, and empowered.",
-      author: "Jasmine A. Toronto",
-      
+      name: 'Ulamen Vanessa Edionseri',
+      title: 'Peer Leader - University Canada West',
+      points: [
+        'Being an NSO volunteer to joining the Peer2Peer program for two terms was an incredibly rewarding part of my MBA journey, and Shina’s presence made it all the more special. From the start, I was drawn to the program by a desire to build meaningful connections, offer support, and grow in leadership and through Shina’s guidance, that hope blossomed into something even more beautiful.',
+        'Shina is warm, kind, and genuinely present. Her “get-it-done” attitude is paired with a joyful spirit that makes you feel instantly at ease. She brings such intentionality to the way she supports and uplifts others always ready to listen, offer insight, or lend a helping hand.',
+        'What really stood out to me is how Shina leads with heart. Her energy is compassionate, grounded, and empowering. She creates spaces where people feel seen and heard and that’s a rare and powerful gift.',
+        'If you’re thinking about working with Shina, know this: you’re in the best hands. She’s not only an incredible support but also someone who champions your growth and truly wants to see you thrive. I’m deeply grateful for her support, both during the Peer2Peer experience and beyond.'
+      ]
     },
     {
-      quote: "This wasn’t just coaching. It was transformation. Shina helped me rebuild trust in myself.",
-      author: "Ryan P. Vancouver",
-      
-    },
-    // Replace with testimonials from the sheet
+      name: 'Imaobong Kingsley Archibong',
+      title: 'Co-Chair, UCW Student Advisory Council, Senior Peer Leader – Spring 2025, Program Ambassador, Career Development Centre',
+      points: [
+        'Working with Shina during my time as a Senior Peer Leader at University Canada West was both grounding and empowering. Her leadership was never about titles or hierarchy; it was about presence, clarity, and the ability to hold space for authentic growth.',
+        'What stayed with me most was Shina’s intuitive and heart-led support. She helped me see leadership as something rooted in emotional intelligence and calm consistency, even during uncertain moments. That balance of structure and compassion shaped the way I showed up for my own team.',
+        'If you’re considering working with Shina, know that you’ll be met with empathy, insight, and a deep belief in your capacity to lead from within. She doesn’t just coach, she gently transforms.'
+      ]
+    }
   ];
 
   return (
@@ -256,18 +264,24 @@ const Index = () => {
               Hear from those who have experienced transformation through our coaching.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-[#F6F1EB] border-0 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                <CardContent className="p-8 flex items-start space-x-6">
-                 
-                  <div>
-                    <blockquote className="text-lg text-[#7D6C61] italic mb-6 leading-relaxed">
-                      "{testimonial.quote}"
-                    </blockquote>
-                    <cite className="text-[#D9A5B3] font-semibold">
-                      — {testimonial.author}
-                    </cite>
+              <Card
+                key={index}
+                className="bg-[#F6F1EB] border-0 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col"
+              >
+                <CardContent className="p-6 flex flex-col flex-grow">
+                  <ol className="space-y-4 text-[#7D6C61] text-sm leading-relaxed flex-grow">
+                    {testimonial.points.map((point, pointIndex) => (
+                      <li key={pointIndex} className="flex items-start space-x-3">
+                        <span className="text-[#D9A5B3] font-semibold">*</span>
+                        <p>{point}</p>
+                      </li>
+                    ))}
+                  </ol>
+                  <div className="mt-6 border-t border-[#D9A5B3]/20 pt-4">
+                    <p className="text-[#5A4B81] font-semibold text-center">{testimonial.name}</p>
+                    <p className="text-[#7D6C61] text-sm text-center">{testimonial.title}</p>
                   </div>
                 </CardContent>
               </Card>
