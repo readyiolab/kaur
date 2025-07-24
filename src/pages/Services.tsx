@@ -205,7 +205,10 @@ const Services = () => {
               <h2 className="text-4xl sm:text-5xl font-serif font-bold text-[#5A4B81] animate-slide-in">
                 Shiney Mindset Reset Toolkit
               </h2>
-              <div className="text-3xl font-bold text-[#D9A5B3] mb-4">$35</div>
+              <div className="text-3xl font-bold text-[#D9A5B3] mb-4">Free until August 31</div>
+              <div className="bg-[#D9A5B3] text-white text-sm font-semibold px-4 py-2 rounded-lg inline-block">
+                Free During Launch Period
+              </div>
               <div className="prose prose-lg prose-[#7D6C61] max-w-none">
                 <p>
                   This beautifully designed digital workbook is for anyone moving through a transition
@@ -213,7 +216,7 @@ const Services = () => {
                   your thoughts, emotions, and intentions — whether you're navigating change in work, love,
                   health, or identity.
                 </p>
-                <p className="font-semibold">
+                <p className="font-semibold pb-5 pt-5">
                   📥 Delivered instantly upon purchase. Use it again and again — whenever life shifts.
                 </p>
               </div>
@@ -229,7 +232,6 @@ const Services = () => {
                   Download Toolkit
                 </Button>
               </a>
-
             </div>
             <div className="relative">
               <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl group">
@@ -296,7 +298,6 @@ const Services = () => {
                   Inquire About Workshops
                 </a>
               </Button>
-
             </div>
           </div>
         </div>
@@ -341,42 +342,7 @@ const Services = () => {
       </section>
 
       {/* Video Section */}
-      {/* <section className="py-24 bg-[#E8DFF5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-[#5A4B81] mb-6 animate-slide-in">
-              Discover Your Journey
-            </h2>
-            <p className="text-lg text-[#7D6C61] max-w-2xl mx-auto">
-              Watch this video to learn how our coaching can guide you through your transformative journey with clarity and compassion.
-            </p>
-          </div>
-          <div className="relative max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-xl group">
-            <video
-              ref={videoRef}
-              className="w-full h-full object-cover"
-              src="https://res.cloudinary.com/dbyjiqjui/video/upload/v1752409961/Extended_VSL_1_ik1zmn.mp4"
-              poster="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&auto=format&fit=crop&q=60"
-              controls={isPlaying}
-            />
-            {!isPlaying && (
-              <div className="absolute inset-0 flex items-center justify-center bg-[#3F2E56]/50 transition-opacity duration-300 group-hover:bg-[#3F2E56]/40">
-                <button
-                  onClick={handlePlayVideo}
-                  className="bg-[#D9A5B3] text-white rounded-full p-4 sm:p-6 hover:bg-[#5A4B81] transform hover:scale-110 transition-all duration-300 shadow-lg"
-                  aria-label="Play video"
-                >
-                  <Play className="w-8 h-8 sm:w-12 sm:h-12" />
-                </button>
-              </div>
-            )}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#D9A5B3]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          </div>
-        </div>
-      </section> */}
       <VideoSection />
-
-      
 
       {/* Final CTA Section */}
       <section className="py-24 bg-gradient-to-r from-[#3F2E56] to-[#5A4B81] text-white">
