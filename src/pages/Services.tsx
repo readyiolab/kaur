@@ -205,7 +205,7 @@ const Services = () => {
               <h2 className="text-4xl sm:text-5xl font-serif font-bold text-[#5A4B81] animate-slide-in">
                 Shiney Mindset Reset Toolkit
               </h2>
-              <div className="text-3xl font-bold text-[#D9A5B3] mb-4">Free until August 31</div>
+              
               <div className="bg-[#D9A5B3] text-white text-sm font-semibold px-4 py-2 rounded-lg inline-block">
                 Free During Launch Period
               </div>
