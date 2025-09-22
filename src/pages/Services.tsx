@@ -206,9 +206,7 @@ const Services = () => {
                 Shiney Mindset Reset Toolkit
               </h2>
               
-              <div className="bg-[#D9A5B3] text-white text-sm font-semibold px-4 py-2 rounded-lg inline-block">
-                Free During Launch Period
-              </div>
+             
               <div className="prose prose-lg prose-[#7D6C61] max-w-none">
                 <p>
                   This beautifully designed digital workbook is for anyone moving through a transition
